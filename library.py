@@ -1,6 +1,5 @@
 import re
 
-# Read comma separated passwords
 passwords = input().split(",")
 
 valid_passwords = []
@@ -13,7 +12,4 @@ for pwd in passwords:
         re.search("[$#@]", pwd)):
         valid_passwords.append(pwd)
 
-# Print valid passwords separated by comma
 print(",".join(valid_passwords))
-
-
